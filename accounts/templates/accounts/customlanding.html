@@ -10,14 +10,7 @@
 		font-family: arial;
 		font-size: 28px;
 	}
-	.kartice {
-		background-color: #f75705;
-		padding: 10px 30px 10px 30px;
-		font-family: arial light;
-		font-size: 20px;
-		border: 6px solid #241C17;
-		border-radius: 7px;
-	}
+
 	.kartice hr{
 		margin-top: 30px;
 		border-color: #241C17;
@@ -71,6 +64,12 @@
 	}
 
 	.c1 {
+		background-color: #f75705;
+		padding: 10px 30px 10px 30px;
+		font-family: arial light;
+		font-size: 20px;
+		border: 6px solid #241C17;
+		border-radius: 7px;
 		border: solid white 2px;
 		border-radius: 7px;
 		background-color: #f6500a;
@@ -134,23 +133,23 @@
 -->
 
 
-<div class="c1">
+
 
 {% for item in all %}
-
-	<p>Nickname: {{item.user.username}}</p> 				<br> <!-- lists all handymen profiles currently, needs 																		to get search func added-->
-	<p>Profession:  {{item.typeOfJob}}</p> 			     <br>
-	<p>Location:  {{item.location}}</p> 				 <br>
-	<p>Description:  {{item.description}}</p> 			 <br>
-	<p>Years of experience:  {{item.experience}}</p>	    <br></div>
+<div class="c1">
+	<p>Nickname:</p>  {{item.user.username}}				<br> <!-- lists all handymen profiles currently, needs 																		to get search func added-->
+	<p>Profession:</p> 	  {{item.typeOfJob}}		     <br>
+	<p>Location:</p>   {{item.location}}				 <br>
+	<p>Description:</p>   {{item.description}}			 <br>
+	<p>Years of experience:</p>  {{item.experience}}	    <br></div>
 
 
 	<hr><br><br>
-
+</div>
 {% endfor %}
 	
 
-</div>
+
 
 
 
